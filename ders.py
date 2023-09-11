@@ -1565,3 +1565,459 @@
 # daha sonra onun reqemlerinin sayi tekdirse, 
 # daha sonra sonuncu reqemi tekdirse ekrana "TEK UGURLU" yazdirin.
 # Diger butun hallar ucun "UGURSUZ" yazdirin. yaz
+
+# 1. Daxil edilən ədədlərdən hər birinin son rəqəmlərini 
+#    götürüb cəmləyin. (While dövr operatoru ilə)
+# eded = input("ededleri daxil edin: ").split()
+# print(eded)
+# newlist = []
+# i = 0
+# while i < len(eded): 
+#   newlist.append(int(eded[i][-1:-2:-1]))
+#   i+=1
+# print(sum(newlist))
+
+
+
+# 2. Ədədin sadə olub olmamağını yoxlayan kod yazın .
+#    (While dövr operatoru ilə)
+
+
+# 3. İstifadəçidən müxtəlif ədədlər alın və cüt olanlarını 
+#    yeni bir list-ə əlavə edin. (While dövr operatoru ilə)
+
+# eded = input("ededleri dxail edin:  ").split()
+# newlist =[]
+# i = 0
+# while i <len(eded):
+#   if int(eded[i]) % 2 ==0:
+#     newlist.append(eded[i])
+#   i+=1
+# print(newlist)
+
+# 4. İstifadəçidən bir söz alın əgər sait hərflərin
+#    sayı çoxdursa, "saitlər qalib gəldi",
+#    bərabərdirsə "bərabər",  samitlər çox olduğu
+#    halda "samitlər qalib gəldi" çap edin. 
+#    (While dövr operatoru ilə)
+
+
+# 5. İstifadəçidən müxtəlif hərflər alın.
+#    Daha sonra bu sözləri əlifba sırasına görə düzüb,
+#    birləşdirin. (While dövr operatoru ilə)
+
+
+# 6. Daxil edilən 2 ədəd arasındaki sözlərin 
+#    ASCİİ qarşılıqlarını bir list-ə əlavə edin.
+#    (While dövr operatoru ilə)
+
+
+# 7. Daxil edilən 2 ədəd arasındakı müsbət ədədləri
+#    bir list-ə əlavə edin. (While dövr operatoru ilə)
+
+
+# 8. Daxil edilən ədədlərdən neçəsinin müsbət olduğunu
+#    tapan funksiya yazın. (While dövr operatoru ilə)
+
+
+# 9. Daxil edilən ədədlərdən neçəsinin rəqəmləri
+#    cəminin cüt olduğunu tapan funksiya yazın. 
+#    (While dövr operatoru ilə)
+
+
+# 10. Daxil edilən cümlədə "a" hərfi ilə başlayan 
+#     sözləri bir list-ə əlavə edin.
+#       (While dövr operatoru ilə)
+
+# 1. mylist = [1,2,3,4,5]
+# list-in elementlərini while dövrü ilə ekrana çap edin.
+
+# mylist = [1,2,3,4,5]
+# i = 0
+# while i < len(mylist): 
+#     print(mylist[i])
+#     i = i + 1
+
+# 2. mylist = [1,2,3,4,5,6]
+# list-in elementlərini while dövrü ilə ekrana çap edin, 
+# lakin elə edin ki, 5 çap olunmasın.
+
+# mylist = [1,2,3,4,5,6]
+# i = 0
+# while i < len(mylist): 
+#         if mylist[i] == 5:
+#              i+=1
+#              continue
+#         print(mylist[i])
+#         i = i + 1 #buna  bir de bax
+        
+# 3. mylist = ['a', 'b', 'c', 'd']
+# list-in elementlərini ekrana çap edin, amma 'c' 
+# olduqda dövr dayansın.
+
+# mylist = ['a', 'b', 'c', 'd']
+# i = 0
+# while i < len(mylist): 
+#         if mylist[i] == 'c':  
+#             break
+#         print(mylist[i])
+#         i = i + 1
+
+
+# 4. 1-dən 100ə qədər cüt ədədləri çap edin.
+
+# i =2
+# while i < 100:
+#     print(i)
+#     i = i + 2
+
+# 5. 100-dən 1-ə qədər tək ədədləri çap edin.
+ 
+# i = 100
+# while i > 1:
+#     if i % 2 == 1:
+#      print(i)
+#     i = i - 1
+
+# 6.mylist = ['1', 'salam', '222', 'b4f8', '0']
+# list-in içində ədəd tipinə çevrilə bilənləri ekrana çap 
+# edin.
+
+
+# mylist = ['1', 'salam', '222', 'b4f8', '0']
+# mylist = "".join(mylist) 
+# i =0
+# while i<len(mylist): 
+#     if mylist[i].isdigit():
+#         print(mylist[i])
+#     i = i+1
+
+# 7.İstifadəçidən içində ixtiyari dəyərlər olan list alın. Daha 
+# sonra list-in elementlərindən ədəd tipdə olanlardan cüt 
+# olanlarını ekrana çap edin.
+
+# eded = input("deyrleri daxil edin: ").split()
+# i =0 
+# while i<len(eded):
+#         if eded[i].isdigit() and int(eded[i]) % 2 == 0:
+#          print(eded[i]) 
+#         i+=1
+
+# 8. Sadə ədəd - o ədədə deyilir ki, yalnız 1ə və özünə 
+# bölünür. Məsələ, 13, 4/7, 31 və s. Daxil edilən ədədin sadə 
+# olub olmadığını/ yoxlayan kod yazın.
+
+# num = int(input("ededi daxil edin:"))
+# i = 2
+# while i < num:
+#     if num % i == 0:
+#         print("murekkeb ededdir")
+#         break
+#     else:
+#      print("sadedir")
+#      break
+#     i+=1
+        
+
+# 9.İstifadəçidən bir parol alın, parolun uzunluğu 5dən 
+# böyük olmadığı təqdirdə parolu soruşmağa dəvam etsin, 
+# yəni dövr etsin.
+
+# while True:
+#     parol = input("parolu daxil edin: ")
+#     if len(parol) > 5:
+#         print("Parol duzdur")
+#         break
+
+# 10.İstifadəçinin daxil etdiyi ədədin faktorialını tapın.
+#   (Faktorial 1dən həmin ədədə qədər olan ədədlərin hasilidir.
+#    Ədədin özü də daxildir).
+
+# num = int(input("ededi daxil edin: "))
+# fact = 1
+# i = 1
+# while i<=num: # burda sehv etmishdim beraberlik yazmamisdim
+#     fact = fact*i
+#     i = i+1
+
+# print(fact)
+
+# num1 = int(input("ededi daxil edin: "))
+# hasil = 1
+
+# for i in range(1,num1+1 ):
+
+#     hasil = hasil * i
+# print(hasil) 
+
+
+# 11.Verilmiş ədədin tərsini çap edin
+# (while ile edin, reversed yaxud [::-1] ile etmeyin)
+
+
+# 12.İstifadəçi ədəd daxil edəcək, əgər ədədin 
+#    rəqəmlərinin kavdratları cəmi ədəddən böyük olarsa,
+#    ekrana "Good number", əgər kiçik olarsa "Bad number"
+#    çap edin. (Məsələn, 42 --> 4² + 2² = 20, 20 <42. 
+#    Ekrana "Bad number çap olunmalıdır".).
+
+# nums = input("ededleri daxil edin: ")
+# i = 0
+# cem = 0
+# while i < len(nums):
+#         cem += int(nums[i])**2 
+#         i+=1
+# if int(nums) < cem:
+#            print("Bad number")
+# if int(nums) > cem :
+#            print("Good number")
+ 
+
+# 13.mytuple = ("alma","armud","nar","kivi")
+#   bu tuple-ın elementlərini while dövr operatoru
+#   vasitəsilə yeni bir list-ə əlavə edin.
+# mytuple = ("alma","armud","nar","kivi")
+# newlist = []
+# i = 0
+# while i < len(mytuple):
+#     newlist.append(mytuple[i])
+#     print(newlist[i])
+#     i+=1
+
+# 14. mylist = [45, -4, 12, 16, 128, 0, 10]
+#     bu list-in maksimum elementini tapan kod yazın. 
+#     (Dövr və şərt operatorlarından istifadə edərək).
+   
+# mylist = [45, -4, 12, 16, 128, 0, 10]
+# newlist = []
+# for i in sorted(mylist):
+#  newlist.append(int(i))
+# print(newlist[-1::])
+
+    
+
+# 15. mylist = [45, -4, 12, 16, 128, 0, 10]
+#     bu list-in minimum elementini tapan kod yazın. 
+#     (Dövr və şərt operatorlarından istifadə edərək).
+
+# mylist = [45, -4, 12, 16, 128, 0, 10]
+# newlist = []
+# for i in sorted(mylist):
+#  newlist.append(int(i))
+# print(newlist[0])
+
+
+# 16. İstifadəçinin daxil etdiyi ədədin rəqəmlərindən 
+#     ən böyüyünü ekrana çap edən kod yazın.
+
+# nums = input("ededleri daxil edin: ")
+# newlist = []
+# for i in nums:
+#         newlist.append(i)
+# newlist = list(map(int,newlist))
+# newlist.sort()
+# print(newlist[-1])
+
+# 17. İstifəçidən bir söz alın və həmin sözdə ən çox 
+#     təkrarlanan hərfin sayini tapın.
+
+# mystr = input("sozu daxil edin: ")
+# count = 0
+# mydic = {}
+# for i in range(len(mystr)):
+#     if mystr.count(mystr[i]) > 1:
+#         mydic.update({mystr[i]:mystr.count(mystr[i])})
+# print(mydic)
+
+# 18. İstifadəçidən bir cümlə daxil etməsini tələb edin.
+#     Və bu cümlədə sözlər boşluqlarla ayrılmış şəkildədir.
+#     Lakin siz elə edin ki, bu boşluqlar "@" işarələri ilə əvəz
+#     olunsunlar.
+
+# soz =  input("cumleni daxil edin: ")
+# print(soz)
+# soz = soz.replace(" ","@")
+# print(soz)
+
+# 19.İstifadəçidən ədəd istəyin. 
+#    Ədədin rəqəmləri cəmi cütdürsə ekrana "cüt",
+#    əks halda "tək" çap edin.
+
+# nums = input("ededleri daxil edin: ")
+# cem = 0
+# for i in nums:
+#         cem += int(i)
+# if cem % 2 == 0:
+#         print("ededler cutdur")
+# else:
+#         print("tekdir")
+
+# 20. mylist = ['a', 1,-5,78,9,0,'alma', 10]
+#     Elə edin ki, bu list-də yalnlz ədəd tipdə olan 
+#     elementlər qalsın və onlar azdan çoxa doğru artsın.
+# mylist = ["a", 1,-5,78,9,0,"alma", 10]
+
+
+
+# 21.  İstifadəçidən ədədlər alın və həmin ədədlərin
+#      medianını tapın. (Median - sıralanmış sırada əgər
+#      ədədlərin sayı tək ədəddfirsə tam ortadakı ədəd, 
+#      əgər ədədlərin sayı cütdürsə, ortadakı 2 ədədin cəminin
+#      yarısıdır. Məsələn, 2,56,7,90,1 --> burada medianı tapmaq 
+#      üçün ədədləri azdan çoxa düzürük daha sonra ortadakı ədədi
+#      median qəbul edirik: 1,2,7,56,90 --> median = 7).
+#      Əgər ədədlərin sayı cüt olsa idi,məsələn; 
+#      1,2,7,11,56,90 --> median = (7+11)/2= 9 olacaq.
+
+
+# nums = input("Ededleri daxil edin : ").split()
+# nums = list(map(int, nums))
+# median = 0
+
+# if len(nums) % 2 == 1:
+#     median = nums[len(nums)//2]
+# else:
+#     median = (nums[len(nums)//2 - 1] + nums[len(nums)//2])/2
+
+# print(median)
+# print(nums) ????
+
+#--------------------------------------------------------------
+# 22.  1dən 100ə qədər ədədlərdən yalnız 5ə bölünənləri
+#      bir list-ə əlavə edin.
+
+# for i in range(1,100+1):
+#     if i % 5 == 0:
+#         print(i)
+
+
+# 23. Daxil edilən ədədin Armstronq olub olmamağını 
+#     yoxlayın. (Armstronq ədəd o ədədə deyilir ki, onun 
+#     rəqəmlərinin kubları cəmi özünə bərabər olsun. 
+#     Məsələn, 153 -- > 1^3 + 5^3 + 3^3 = 153).
+# num1 = input("ededleri daxil edin:")
+# num2 = 0
+# for i in num1:
+#     num2 = num2+int(i)**3
+# if int(num1) == num2:
+#     print("Eded Armstronqdur")
+# else:
+#     print("Eded Armstronq deyil ")
+       
+# 24. Daxil edilən ədədin polindrom olub olmadığını 
+#     yoxlayan kod yazın. (Polindrom ədəd o ədədə deyilir 
+#     ki, tərsi də özünə bərabər olsun, məsələn: 77, 121, 
+#     1221 və s.)
+# num = input("edei daxil edin : ")
+# if num == num[::-1]:
+#         print("eded polindrondur: ",num)
+# else:
+#         print("polindron deyil: ",num)
+
+# 25. İstifadəçi tərəfindən daxil edilən 2 ədəd arasında olan
+#     ədədlərin hasilini tapan python kodu yazın.
+# num1 = int(input("1-ci ededi daxil edin: "))
+# num2 = int(input("2-ci ededi daxil edin: "))
+# hasil = 1
+# for i in range(num1,num2+1 ):
+#     hasil = hasil * i
+# print(hasil) 
+
+# 26. Daxil edilən sözdə sait hərflərin sayını tapan python 
+#     kodu yazın.
+
+# soz = input("sozu daxil edin: ")
+# saitler =('a','ı','o','u','i','ə', 'e', 'ö','ü')
+# saygac = 0
+# for i in soz:
+#    for j in saitler:
+#          if j == i: 
+#               saygac += 1
+# print(saygac) #burda nece etmek olar ki saitin ozunu de gostersin
+
+# 27. Istifaciden aldiginiz 2 eded arasinda olan cut ededleri 
+#     cap eden funskiya yazin.
+
+# num1 = int(input("1-ci ededi daxil edin: "))
+# num2 = int(input("2-ci ededi daxil edin: "))
+# cem = 0
+# for i in range(num1,num2+1 ):
+#     cem = cem + i
+#     print(cem)
+
+# 28. Daxil edilen ededden 100 vahid geride ve 100 vahid
+#     irelide duran cut ededleri bir list-e elave eden
+#     funksiya yazin.
+
+
+# eded = int(input("ededi daxil edin: "))
+# newlist = []
+# def myfunc(number):
+#   if number > 100:
+#    for i in range(number - 100, number + 101):
+#     if i % 2 == 0:
+#      newlist.append(i)
+# print(newlist)
+
+# myfunc(eded)
+
+# 29. Daxil edilen sozde boyuk herflerin sayini qaytaran 
+#     funksiya yazin.
+
+# soz =  input("sozu daxil edin:")
+# def myfunc(soz):
+#     saygac  = 0
+#     for i in soz:
+#         if i == i.upper():
+#             saygac = saygac+1
+#     return saygac  
+# print(myfunc(soz))   
+
+
+# 30. Daxil edilen cumlede icerisinde @ isaresi olan sozlerin
+#     sayini qaytaran funksiya yazin
+
+# soz =  input("sozu daxil edin:")
+# def myfunc(soz):
+#     saygac  = 0
+#     for i in soz:
+#         if i == "@":
+#             saygac = saygac+1
+#     return saygac  
+# print(myfunc(soz))   
+
+# 31. İstifadəçi boşluqla istədiyi qədər ədəd daxil edə bilər,
+#     bu ədədlərdən neçəsinin cüt olduğunu qaytaran
+#     funksiya yazın.
+
+# num = int(input("ededleri daxil edin: "))
+# def myfunc(num):
+#     for i in num:
+#         if i % 2 ==0:
+#             return "eded cutdur"
+#         else:
+#             return "tekdir"
+# print(myfunc(num))
+
+
+# 32.  Daxil edilən sözdə təkrarlanan hərfi yeni bir
+#      list-ə əlavə edən funskiya yazın.
+
+
+# 33.Daxil edilən sözün hərflərinin ASCİİ əlifbasındakı
+#    dəyərlərini bir list-ə əlavə edən funskiya yazın.
+
+
+# 34. İstifadəçi bir sətrdə boşluqlarla ədədlər daxil 
+#     edəcək və ASCİİ dəyərlərinə uyğun gələn hərf və simvolları
+#     birləşmiş bir str tip dəyər şəklində return edən funskiya 
+#     yazın.
+
+
+# 35.Sözdə böyük hərflərin və kiçik hərflərin sayını 
+#    qaytaran funskiya yazın.
+
+
+# 36.Istifadeciden reqemler alin, ixtiyari sayda ola biler.
+#    Daha sonra cut yerde duran ededlerin ceminden tek 
+#    yerde duran ededlerin cemini cixin.
